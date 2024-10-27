@@ -1,0 +1,241 @@
+@font-face {
+  font-family: "Xiaomi";
+  src: url(../fonts/SourceSansPro-Regular.ttf) format("truetype"),
+    url(../fonts/SourceSansPro-Regular.woff) format("woff");
+}
+
+@font-face {
+  font-family: "XiaomiBlack";
+  src: url(../fonts/SourceSansPro-Black.ttf) format("truetype"),
+    url(../fonts/SourceSansPro-Black.woff) format("woff");
+}
+
+@font-face {
+  font-family: "XiaomiBold";
+  src: url(../fonts/SourceSansPro-Bold.ttf) format("truetype"),
+    url(../fonts/SourceSansPro-Bold.woff) format("woff");
+}
+
+@font-face {
+  font-family: "XiaomiLight";
+  src: url(../fonts/SourceSansPro-Light.ttf) format("truetype"),
+    url(../fonts/SourceSansPro-Light.woff) format("woff");
+}
+
+@font-face {
+  font-family: "XiaomiExtraL";
+  src: url(../fonts/SourceSansPro-ExtraLight.ttf) format("truetype"),
+    url(../fonts/SourceSansPro-ExtraLight.woff) format("woff");
+}
+
+@font-face {
+  font-family: "XiaomiSemiBold";
+  src: url(../fonts/SourceSansPro-Semibold.ttf) format("truetype"),
+    url(../fonts/SourceSansPro-Semibold.woff) format("woff");
+}
+
+body {
+  margin: 0;
+  font-family: "XiaomiSemiBold";
+}
+
+header {
+  display: flex;
+  width: 100%;
+  height: 50px;
+  flex-direction: column;
+}
+
+.banner {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  color: white;
+  width: 100%;
+  padding: 10px;
+}
+
+.navegador {
+  font-family: "Xiaomi";
+  display: flex;
+  flex-direction: row;
+  padding: 2px;
+}
+/* parque izquierda del nav */
+.menu1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  width: 50%;
+}
+.menu1 img {
+  width: 30px;
+}
+
+.lista1 {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  padding: 0%;
+}
+
+.lista1 li {
+  padding-left: 45px;
+}
+
+/* parte derecha del nav */
+.menu2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+.lista2 {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+
+.lista2 li {
+  padding-right: 50px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Primera parte del main */
+.principal {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px;
+}
+
+.flecha {
+  width: 40px;
+}
+
+.mensaje1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  font-family: "Xiaomi";
+}
+.mensaje2 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  font-family: "Xiaomi";
+  font-size: 1.2rem;
+}
+
+.letra {
+  font-size: 3.2rem;
+  font-family: "XiaomiBold";
+}
+
+button {
+  background-color: black;
+  color: white;
+  text-align: center;
+  width: 150px;
+  height: 40px;
+  border-radius: 12px;
+  margin-right: 10px;
+}
+
+.saltoLinea {
+  width: 100%;
+}
+
+/* FOOTER LISTAS */
+footer {
+  background-color: black;
+  color: rgb(127, 126, 126);
+  display: grid;
+  grid-template-columns: 18% 18% 18% 18% 28%;
+  padding: 60px 50px 60px 10px;
+  font-size: 1.2rem;
+}
+
+.lista3 {
+  list-style-type: none;
+  margin-left: 5px;
+}
+.lista3 li {
+  padding-bottom: 15px;
+}
+
+h3 {
+  color: white;
+  padding-left: 40px;
+  margin: 5px;
+}
+
+/* FOOTER DERECHA CUADROS */
+.lista4 {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+}
+
+.icons {
+  width: 30px;
+  padding-right: 15px;
+}
+
+.correo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border: 1px solid white;
+  border-radius: 12px;
+  margin-left: 40px;
+}
+.correo p {
+  margin: 10px;
+}
+
+.icons2 {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-self: center;
+  padding-left: 5px;
+}
+
+.descargas {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid white;
+  border-radius: 12px;
+  margin-left: 40px;
+}
+
+.arriba {
+  display: flex;
+  flex-direction: row;
+}
+.qr {
+  width: 80px;
+  height: 80px;
+  margin: 30px 15px;
+}
+.store {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+hr {
+  color: rgb(127, 126, 126);
+}
