@@ -1,0 +1,107 @@
+body {
+  display: flex;
+  justify-content: center;
+}
+.cuerpo {
+  display: flex;
+  width: 50%;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.verde {
+  background-color: rgb(71, 211, 129);
+  color: white;
+  padding-right: 2em;
+  padding-bottom: 2em;
+  padding-left: 7em;
+  padding-top: 5em;
+  width: calc(50% - 7em);
+}
+
+.verde span {
+  color: yellow;
+}
+
+.verde h1 {
+  font-size: 2.5rem;
+}
+
+.blanco {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 6em;
+  width: calc(50% - 3em);
+  font-size: 0.85rem;
+  color: rgb(80, 79, 79);
+}
+
+.negrita {
+  font-weight: bold;
+}
+input {
+  font-size: 0.9rem;
+}
+
+#correo {
+  width: 100%;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-bottom: 1px solid gray;
+}
+
+form p:first-of-type {
+  margin: 10px 3px;
+}
+
+a {
+  color: rgb(80, 79, 79);
+  font-weight: bold;
+}
+
+.contenedorContraseña {
+  width: 100%;
+  margin-top: 4em;
+  border-bottom: 1px solid gray;
+  margin-bottom: 10px;
+}
+
+#contrasena {
+  width: 92%;
+  border: none;
+}
+
+button {
+  width: 100%;
+  border: none;
+  border-radius: 25px;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+.seguir {
+  margin-top: 3em;
+  margin-bottom: 3em;
+  background-color: rgb(70, 153, 95);
+  color: white;
+}
+
+.crear {
+  margin-top: 1.2em;
+  margin-bottom: 0.3em;
+}
+
+@media (max-width: 1024px) {
+  .cuerpo {
+    width: 100%;
+  }
+}
+@media (max-width: 450px) {
+  .cuerpo {
+    flex-direction: column-reverse;
+  }
+  .verde,
+  .blanco {
+    width: 80%;
+  }
+}
