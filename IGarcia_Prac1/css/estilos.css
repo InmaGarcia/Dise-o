@@ -1,0 +1,70 @@
+body {
+  font-family: Arial, sans-serif;
+  color: #493f5a;
+}
+.contenedor {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 350px;
+}
+
+.contenedor h1 {
+  font-size: 1.4rem;
+}
+
+img {
+  width: 80px;
+}
+
+.user {
+  border: 1px solid #b7babd;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+.negrita {
+  font-weight: bold;
+  font-size: 0.9em;
+}
+
+.user p {
+  font-weight: lighter;
+  font-size: 0.8em;
+  padding: 5px 25px;
+  margin: 0;
+}
+
+a {
+  color: #1c7ccf;
+  text-decoration: none;
+}
+
+.user:focus-within {
+  border: 1px solid #3a94e2;
+  background-color: #deeaf4a9;
+}
+
+input[type="email"] {
+  border: 1px solid #b7babd;
+  border-radius: 5px;
+  padding: 8px;
+  font-style: italic;
+  font-size: 0.9em;
+}
+
+button {
+  margin: 20px 0;
+  padding: 8px;
+  background-color: #1c7ccf;
+  background: linear-gradient(#288ce5, #1062ab);
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+}
+
+footer {
+  font-weight: lighter;
+  font-size: 0.8em;
+}
