@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+
+body {
+  background-color: #f1f1f1;
+  font-family: "Roboto Condensed";
+  display: flex;
+}
+
+.izq {
+  width: calc(50% - 110px);
+  margin: 40px 20px 0 90px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 3rem;
+  font-weight: normal;
+}
+
+.izq p:first-of-type,
+.dch p:first-of-type {
+  margin-top: 0;
+  margin-bottom: 40px;
+  color: rgb(70, 70, 70);
+}
+
+span {
+  color: red;
+}
+
+fieldset,
+.inform {
+  background-color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 40px 20px 20px 20px;
+}
+
+label {
+  font-size: 0.9rem;
+}
+
+input[type="email"],
+input[type="password"] {
+  border: none;
+  outline: none;
+}
+
+.correo,
+.contrasena {
+  border: 1px solid grey;
+  padding: 0.5em;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  margin-top: 5px;
+}
+.contrasena img {
+  width: 20px;
+}
+
+.check {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  color: rgb(70, 70, 70);
+}
+
+.check a {
+  color: black;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.botones {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+#btn1 {
+  background-color: red;
+  color: white;
+  padding: 20px;
+  font-weight: bold;
+  font-size: 1.2em;
+  border: none;
+  border-radius: 30px;
+}
+
+.dch {
+  width: calc(50% - 95px);
+  margin: 40px 90px 0 5px;
+}
+
+.promos {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgb(204, 203, 203);
+  align-items: center;
+}
+
+.promos:last-child {
+  border-bottom: none;
+}
+
+.contenido p:first-child {
+  margin-top: 10px;
+  margin-bottom: 0;
+  font-size: 2em;
+}
+.contenido p:last-child {
+  margin-top: 2px;
+  font-size: 0.9rem;
+}
+
+.contenido a {
+  text-decoration: none;
+  font-weight: bold;
+}
+.promos img {
+  width: 50px;
+  height: 50px;
+}
+
+#btn2,
+#btn3,
+#btn4 {
+  background-color: white;
+  border: 1px solid grey;
+  padding: 15px 25px;
+  font-weight: bold;
+  font-size: 1.2em;
+  border-radius: 30px;
+  margin-left: 10px;
+}
+
+@media (max-width: 500px) {
+  body {
+    flex-direction: column;
+  }
+  #btn2 {
+    display: none;
+  }
+  #btn4 {
+    display: block;
+  }
+}
