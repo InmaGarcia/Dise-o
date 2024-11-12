@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+
+body {
+  font-family: "Nunito Sans";
+  background-color: black;
+  margin: 0;
+}
+
+header {
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  font-weight: bold;
+}
+header p {
+  margin-top: 5px;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contenido {
+  display: flex;
+  justify-content: flex-end;
+}
+
+fieldset {
+  background-color: white;
+  width: 33%;
+  border: none;
+  padding: 0;
+}
+
+.pestanias {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  border: none;
+  margin-top: 50px;
+}
+
+.pestanias div:last-child {
+  background-color: black;
+  color: white;
+  width: calc(33% / 2);
+}
+.pestanias img {
+  display: none;
+}
+
+.pestanias div:first-child {
+  background-color: white;
+  width: calc(33% / 2);
+}
+
+form {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 0.9rem;
+}
+form p:first-child {
+  margin-bottom: 30px;
+}
+
+label {
+  width: 100%;
+  font-weight: bold;
+  font-size: 0.8rem;
+  margin-bottom: 5px;
+}
+
+label:last-child {
+  font-weight: lighter;
+  font-size: 0.9rem;
+}
+
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  margin-bottom: 30px;
+  padding: 8px 10px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+
+input[type="button"] {
+  width: 100%;
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+a {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: black;
+}
+
+.final {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+hr {
+  width: 45%;
+}
+
+.icono {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  width: calc(33% - 10px);
+  margin-right: 18px;
+}
+
+.icono img {
+  width: 100px;
+  height: 100px;
+  margin-left: auto;
+}
+
+@media (max-width: 625px) {
+  body {
+    background-color: wheat;
+  }
+  header {
+    background-color: black;
+    color: white;
+  }
+  header p:first-child,
+  header p:last-child {
+    display: none;
+  }
+  fieldset {
+    width: 100%;
+    margin: 0 20px;
+  }
+  .icono {
+    display: none;
+  }
+
+  .pestanias {
+    width: 100%;
+    margin-top: 50px;
+    justify-content: start;
+    margin-left: 20px;
+  }
+
+  .pestanias div:last-child {
+    background-color: wheat;
+    color: white;
+    width: 50%;
+    margin-right: 30px;
+    font-size: 0.9em;
+  }
+
+  .pestanias div:first-child {
+    border-top: 5px solid #1450a0;
+    width: 50%;
+    font-size: 0.9em;
+  }
+
+  .pestanias img {
+    display: flex;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 65px;
+    left: 520px;
+  }
+}
