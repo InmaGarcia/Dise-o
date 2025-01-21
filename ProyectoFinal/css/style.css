@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+body {
+  margin: 0;
+  background-color: #edddd4;
+}
+
+header {
+  background-color: #b76e79;
+  margin-top: 2.5%;
+  display: flex;
+  width: 100vw;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  border-radius: 90px;
+  border: 3px solid black;
+  position: absolute;
+  top: 10px;
+  left: 40px;
+  z-index: 2;
+}
+
+header h1 {
+  margin: 0 250px;
+  font-family: "Pacifico";
+  font-size: 4.5rem;
+  font-style: italic;
+  display: flex;
+  align-items: center;
+}
+.iconos {
+  width: 25%;
+  display: flex;
+  align-items: center;
+  margin-right: 50px;
+  justify-content: space-between;
+}
+
+.icon {
+  width: 10%;
+}
+
+.buscador .icon {
+  width: 15%;
+}
+.search {
+  width: 65%;
+  border: none;
+  background-color: #b76e79;
+  outline: none;
+  margin-left: 4%;
+}
+
+.buscador {
+  border-bottom: 1px solid black;
+}
+
+input::placeholder {
+  color: black;
+  font-size: 1.2em;
+}
+
+/* CARRUSEL */
+
+.medida {
+  width: 100vw;
+  height: 80vh;
+}
