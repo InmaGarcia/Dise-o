@@ -64,30 +64,33 @@ input::placeholder {
 }
 /* MENU */
 
-.menu{
-  display:grid;
+.menu {
+  display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 200px 200px;
-  gap:20px;
-  margin:30px;
+  gap: 20px;
+  margin: 50px;
 }
 
-.btn-menu{
-border:2px solid #b76e79 ;
-padding: 0;
-border-radius: 22px;
+article {
+  display: flex;
+  justify-content: center;
+}
+.btn-menu {
+  border: 3px solid #b76e79;
+  padding: 0;
 }
 
-.btn-menu img{
-  border-radius: 20px;
+.btn-menu img {
+  width: 100%;
+  height: 100%;
 }
-
 
 /* CARRUSEL */
 
 .medida {
   width: 100vw;
-  height: 80vh;
+  height: 500px;
 }
 .carousel-caption {
   color: azure;
@@ -98,4 +101,40 @@ border-radius: 22px;
   );
   border-radius: 12px;
   backdrop-filter: blur(5px);
+}
+
+.black {
+  color: black;
+}
+
+/* VENTAS */
+.ventas {
+  margin: 50px 80px;
+  display: grid;
+  grid-template-columns: 20% 70%;
+}
+
+.ventas h2,
+.item h3 {
+  font-family: "Pacifico";
+}
+
+.productos {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 5px;
+}
+.item {
+  background-color: white;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.productos img {
+  width: 90%;
+  border: 2px solid #edddd4;
+  margin-bottom: 5px;
 }
