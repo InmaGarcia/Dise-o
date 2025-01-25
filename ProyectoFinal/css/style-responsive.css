@@ -1,0 +1,61 @@
+@media (max-width: 800px) {
+  .iconos {
+    justify-content: end;
+    margin-right: 0;
+  }
+  .logo {
+    width: 80px;
+    top: 1%;
+  }
+  .btn-group,
+  .icon,
+  .item p:last-of-type,
+  .buscador {
+    display: none;
+  }
+  .dropdown {
+    display: flex;
+    align-items: center;
+  }
+  header h1 {
+    margin: 0 10px 0 100px;
+  }
+  a {
+    text-decoration: none;
+  }
+
+  .menu button {
+    margin: 5px;
+    width: 50%;
+    width: 200px;
+  }
+
+  .medida {
+    height: 250px;
+  }
+
+  .ventas {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .item {
+    width: 200px;
+  }
+
+  footer .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  footer .footer-section {
+    margin: 20px 0;
+    flex: 0;
+  }
+}

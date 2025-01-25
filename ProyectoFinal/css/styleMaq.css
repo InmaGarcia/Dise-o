@@ -32,6 +32,9 @@ header h1 {
   display: flex;
   align-items: center;
 }
+
+.menu {
+}
 .iconos {
   width: 25%;
   display: flex;
@@ -63,84 +66,35 @@ input::placeholder {
   color: black;
 }
 
-.dropdown {
-  display: none;
-}
-/* MENU */
-
-.menu {
-  margin: 50px;
+.btn {
+  border: none;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  align-items: center;
 }
 
-article {
-  display: flex;
-  justify-content: center;
-}
-.btn-menu {
-  border: 3px solid #b76e79;
-  padding: 0;
-  margin: 40px;
+.a2 {
+  font-weight: bolder;
+  text-decoration: underline solid black 3px;
+  text-underline-offset: 0.4em;
 }
 
-.btn-menu img {
-  width: 100%;
-  height: 100%;
+main {
+  margin: 5%;
 }
 
-/* CARRUSEL */
-
-.medida {
-  width: 100vw;
-  height: 500px;
-}
-.carousel-caption {
-  color: azure;
-  background: linear-gradient(
-    to top,
-    rgb(0, 0, 0, 0.15),
-    rgb(255, 255, 255, 0.15)
-  );
-  border-radius: 12px;
-  backdrop-filter: blur(5px);
-}
-
-.black {
-  color: black;
-}
-
-/* VENTAS */
-.ventas {
-  margin: 50px 80px;
-  display: grid;
-  grid-template-columns: 20% 70%;
-}
-
-.ventas h2,
-.item h3 {
+h2 {
   font-family: "Pacifico";
 }
 
-.productos {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 5px;
-}
-.item {
-  background-color: white;
-  width: 100%;
-  padding: 20px;
+.galeria {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 5%;
+  justify-content: center;
 }
-.productos img {
-  width: 90%;
-  border: 2px solid #edddd4;
-  margin-bottom: 5px;
+
+.card {
+  margin: 10px;
 }
 
 .btn2 {
@@ -149,6 +103,10 @@ article {
   justify-content: center;
   border: 1px solid black;
   font-weight: bold;
+}
+
+.dropdown {
+  display: none;
 }
 
 /* FOOTER */
@@ -209,5 +167,3 @@ footer .social-icons a {
   font-size: 20px;
   text-decoration: none;
 }
-
-
