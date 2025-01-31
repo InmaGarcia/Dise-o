@@ -1,8 +1,9 @@
-.bloque {
-  background-color: black;
-  width: 10px;
-  height: 10px;
-  position: absolute;
-  left: 0;
-  top: 0;
+canvas {
+  width: "450";
+  height: "450";
+}
+
+.btn {
+  margin: 5px;
+  padding: 2px;
 }

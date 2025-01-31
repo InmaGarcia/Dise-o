@@ -1,52 +1,22 @@
-// $(function () {
-//   consoleIni();
-//   let cadena = "texto 2";
-//   muestraCadena(cadena);
-// });
+$("#iniciar").ready(function () {
+  var serpiente; //array de la serpiente
 
-// function consoleIni() {
-//   console.log("todo ok");
-// }
+  var canvas = $("#canvas")[0]; //me traigo el tablero de juego
+  var contexto = canvas.getContext("2d"); // hacemos el tablero bidimensional
+  var ancho = $("#canvas").width(); // guardamos el ancho y el alto
+  var alto = $("#canvas").height();
 
-// function muestraCadena(cad) {
-//   console.log(cad);
-// }
+  // necesitamos declarar valores iniciales
+  var direc;
 
-// $(function () {
-//   $("button").click(function () {
-//     inicio();
-//   });
-// });
-
-// function inicio() {
-//   $("button").hide();
-// }
-
-$(document).on("keydown", function (event) {
-  if (event.key == "ArrowRight") {
-    console.log("Derecha");
-    muevete("left", 10);
-  } else if (event.key == "ArrowLeft") {
-    console.log("Izquierda");
-    muevete("left", -10);
-  } else if (event.key == "ArrowUp") {
-    console.log("Arriba");
-    muevete("top", -10);
-  } else {
-    console.log("Abajo");
-    muevete("top", 10);
+  function inicial() {
+    direc = "right"; // empezamos siempre hacia la derecha
+    //con una longitud x
+    pintarSerpiente(); //pintamos la serpiente
+    pintarComida(); //pintamos una galleta si no hay en el tablero. Se mirara cada cierto tiempo si hay comida en el tablero
   }
+
+  function pintarSerpiente() {}
+
+  function pintarComida() {}
 });
-
-function muevete(dire, cant) {
-  var count = 0;
-  let intervalo = setInterval(function () {
-    nuevoValor = parseInt($(".bloque").css(dire));
-
-    $(".bloque").css(dire, nuevoValor + cant);
-    count++;
-    if (count >= 6) {
-      clearInterval(intervalo);
-    }
-  }, 250);
-}
