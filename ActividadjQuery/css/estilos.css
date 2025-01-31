@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pacifico&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+
+body {
+  font-family: "Open Sans";
+  background-color: #dfdfdf;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2em;
+}
+
+.opciones {
+  display: flex;
+  align-items: center;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1em;
+}
+.item label {
+  margin-bottom: 1em;
+}
+
+.btn {
+  background-color: #1b74e4;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 20px;
+  width: 250px;
+}
+
+.container2 {
+  background-color: #ffffff;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3em;
+}
+
+input {
+  width: 100%;
+  border: 2px solid #dfdfdf;
+  outline: none;
+  padding: 10px;
+  margin-bottom: 5px;
+}
+.inicioSesion {
+  display: flex;
+  align-items: center;
+  padding-bottom: 20px;
+  justify-content: space-between;
+}
+
+a {
+  text-decoration: none;
+  font-size: 0.8em;
+}
+.btn2 {
+  color: white;
+  background-color: #1b74e4;
+  border: none;
+  padding: 10px;
+  border-radius: 20px;
+  width: 150px;
+}
+.btn2:disabled {
+  background-color: #757575;
+}
+.sociales {
+  width: 100%;
+  background-color: #dfdfdf;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 0.8em;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.sociales i {
+  font-size: 1.3em;
+}
+.face i {
+  color: white;
+}
+
+.b {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1b74e4;
+  border: none;
+  margin: 10px 0;
+  width: 300px;
+}
+.face {
+  background-color: #1b74e4;
+  color: white;
+}
+
+.btn3 {
+  background-color: transparent;
+
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  width: 250px;
+}
+
+.google {
+  background-color: white;
+  color: black;
+}
+
+.container3 {
+  display: none;
+}
+
+.usuario {
+  display: flex;
+  padding: 20px;
+}
+
+.userFinal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  margin: 20px;
+  padding: 30px 70px;
+  border-radius: 5px;
+}
+
+.flecha {
+  background-color: #dfdfdf;
+  color: white;
+  padding: 5px;
+  border-radius: 15px;
+  border: none;
+  margin-top: 10px;
+}
