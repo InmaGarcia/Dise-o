@@ -3,6 +3,7 @@
 body {
   font-family: "Open Sans";
   background-color: #dfdfdf;
+  color: #3c3c3c;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -51,7 +52,7 @@ body {
   padding: 3em;
 }
 
-input {
+.inputCuenta {
   width: 100%;
   border: 2px solid #dfdfdf;
   outline: none;
@@ -153,4 +154,95 @@ a {
   border-radius: 15px;
   border: none;
   margin-top: 10px;
+}
+
+.proveedor,
+.cliente {
+  border: 5px solid white;
+  border-radius: 10px;
+  padding: 20px;
+  width: 700px;
+  display: none;
+}
+
+.formulario {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  align-items: center;
+}
+.proveedor span,
+.cliente span {
+  font-size: 0.7rem;
+}
+
+.notas {
+  display: flex;
+  flex-direction: column;
+}
+
+.proveedor input,
+.cliente input,
+.proveedor select {
+  width: calc(100%-8px);
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.fecha {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 5px;
+}
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+input[type="checkbox"] {
+  width: auto;
+  margin-right: 10px;
+}
+#submit-btn {
+  width: 100px;
+  padding: 10px;
+  background-color: #1b74e4;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  margin-top: 20px;
+  align-items: center;
+  margin: 0 45%;
+}
+#submit-btn:disabled {
+  background-color: #757575;
+}
+
+.pass {
+  width: 100%;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: white;
+}
+
+.pass input {
+  width: 90%;
+  border: none;
+  outline: none;
+  position: relative;
+}
+
+.icon {
+  position: absolute;
+  display: block;
+  bottom: 0.5rem;
+  right: 1rem;
+}
+
+.msg-error {
+  color: red;
+  display: block;
+  margin-top: 5px;
 }

@@ -9,7 +9,7 @@ const buttonPageMapping = {
 };
 
 // cojemos todos los botones del menu
-const buttons = document.querySelectorAll(".btn-menu");
+const buttons = document.querySelectorAll(".menu-item");
 
 // Recorremos los botones y les asociamos el evento click
 buttons.forEach((button) => {

@@ -1,71 +1,47 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
 body {
   margin: 0;
-  background-color: #edddd4;
 }
-
-header {
+/* CABECERA */
+.navbar {
   background-color: #b76e79;
-  margin-top: 2%;
-  display: flex;
-  width: 100vw;
-  height: 70px;
-  display: flex;
-  justify-content: space-between;
+  height: 120px;
+  color: black;
+  flex-wrap: nowrap;
+  box-shadow: 0.3em 0.3em 1em rgba(0, 0, 0, 0.5);
 }
-
+.navbar .container-fluid {
+  justify-content: space-around;
+}
+.flex {
+  display: flex;
+  width: 500px;
+}
 .logo {
   width: 100px;
   border-radius: 90px;
   border: 3px solid black;
-  position: absolute;
-  top: 3%;
-  left: 2%;
-  z-index: 2;
 }
-
-header h1 {
-  margin: 0 150px;
+.universe {
   font-family: "Pacifico";
   font-size: 3rem;
   font-style: italic;
   display: flex;
   align-items: center;
 }
-.iconos {
-  width: 25%;
-  display: flex;
-  align-items: center;
-  margin-right: 50px;
-  justify-content: space-between;
-}
 
-.icon {
-  width: 30px;
+.btn {
+  color: white;
 }
-
-.buscador .icon {
-  width: 25px;
-}
-.search {
-  width: calc(100% - 40px);
+.btn:hover {
   border: none;
-  background-color: #b76e79;
-  outline: none;
-  margin-left: 4%;
-}
-
-.buscador {
-  border-bottom: 1px solid black;
-}
-
-input::placeholder {
-  color: black;
+  color: white;
 }
 
 .dropdown {
   display: none;
 }
+
 /* MENU */
 
 .menu {
@@ -79,13 +55,16 @@ article {
   display: flex;
   justify-content: center;
 }
-.btn-menu {
+
+.menu-item {
   border: 3px solid #b76e79;
   padding: 0;
   margin: 40px;
+  background: transparent;
+  cursor: pointer;
 }
 
-.btn-menu img {
+.menu-item img {
   width: 100%;
   height: 100%;
 }
@@ -125,13 +104,13 @@ article {
 
 .productos {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 5px;
 }
 .item {
-  background-color: white;
+  border: 2px solid #edddd4;
   width: 100%;
-  padding: 20px;
+  padding: 15px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -145,10 +124,14 @@ article {
 
 .btn2 {
   width: 100px;
-  display: flex;
-  justify-content: center;
   border: 1px solid black;
   font-weight: bold;
+  color: black;
+}
+
+.btn2:hover {
+  background-color: #b76e79;
+  border: 1px solid black;
 }
 
 /* FOOTER */
@@ -209,5 +192,3 @@ footer .social-icons a {
   font-size: 20px;
   text-decoration: none;
 }
-
-
