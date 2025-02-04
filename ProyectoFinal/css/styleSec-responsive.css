@@ -1,0 +1,42 @@
+@media (max-width: 650px) {
+  .card-text,
+  .btn-group,
+  .icon,
+  .nav,
+  .flex,
+  .colors-wrap h3 {
+    display: none;
+  }
+
+  .dropdown {
+    display: flex;
+    align-items: center;
+    margin: 0 5px;
+  }
+  .dropdown-menu[data-bs-popper] {
+    left: -75px;
+  }
+  a {
+    text-decoration: none;
+  }
+  .card {
+    width: 10em;
+  }
+  .colors {
+    width: 10px;
+    height: 10px;
+    margin: 0 10px;
+  }
+  .colors-wrap {
+    padding: 0 0 10px 0;
+  }
+  footer .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  footer .footer-section {
+    margin: 20px 0;
+    flex: 0;
+  }
+}

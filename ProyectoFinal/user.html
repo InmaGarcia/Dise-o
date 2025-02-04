@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Universe : Iniciar sesión</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/styleSec.css" />
+    <link rel="stylesheet" href="./css/styleSec-responsive.css" />
+    <link rel="stylesheet" href="./css/styleLogin.css" />
+    <link rel="icon" href="./imagenes/favicon.png" type="image/x-icon" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="container-fluid">
+          <a class="navbar-brand universe" href="index.html">
+            <img
+              src="./imagenes/logo.png"
+              alt="Logo"
+              class="d-inline-block align-text-top logo"
+            />
+            Universe
+          </a>
+          <ul class="nav nav-tabs">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="maquillaje.html">Maquillaje</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="facial.html">Cuidado Facial</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="perfume.html">Perfumes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="corporal.html">Cuidado Corporal</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="capilar.html">Cuidado Capilar</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="hogar.html">Hogar</a>
+            </li>
+          </ul>
+          <form class="flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn" type="submit">Buscar</button>
+          </form>
+          <div class="iconos">
+            <a href="#"><img src="./imagenes/user.png" class="icon" /></a>
+            <a href="#"><img src="./imagenes/bag-shop.png" class="icon" /></a>
+          </div>
+          <div class="dropdown">
+            <button
+              class="btn btn dropdown-toggle"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Menu
+            </button>
+            <ul class="dropdown-menu">
+              <li>
+                <a href="index.html"
+                  ><button class="dropdown-item" type="button">
+                    Inicio
+                  </button></a
+                >
+              </li>
+              <li>
+                <a href="maquillaje.html"
+                  ><button class="dropdown-item" type="button">
+                    Maquillaje
+                  </button></a
+                >
+              </li>
+              <li>
+                <a href="facial.html"
+                  ><button class="dropdown-item" type="button">
+                    Cuidado Facial
+                  </button></a
+                >
+              </li>
+              <li>
+                <a href="perfume.html"
+                  ><button class="dropdown-item" type="button">
+                    Perfumes
+                  </button></a
+                >
+              </li>
+              <li>
+                <a href="corporal.html"
+                  ><button class="dropdown-item" type="button">
+                    Cuidado Corporal
+                  </button></a
+                >
+              </li>
+              <li>
+                <a href="capilar.html"
+                  ><button class="dropdown-item" type="button">
+                    Cuidado Capilar
+                  </button></a
+                >
+              </li>
+              <li>
+                <a href="hogar.html"
+                  ><button class="dropdown-item" type="button">Hogar</button></a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><button class="dropdown-item" type="button">
+                    Mi carrito
+                  </button></a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><button class="dropdown-item" type="button">
+                    Iniciar sesión
+                  </button></a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- LOGIN -->
+    <main>
+      <div class="container">
+        <div class="container-form">
+          <form action="InicioRegistro.php" method="POST" class="sign-in">
+            <h2>Iniciar sesion</h2>
+            <span>Ingrese su correo y contraseña</span>
+            <div class="container-input">
+              <i class="fa-regular fa-envelope"></i>
+              <input type="text" placeholder="Email" name="email" />
+            </div>
+            <div class="container-input">
+              <i class="fa-solid fa-lock"></i>
+              <input type="password" placeholder="Password" name="password" />
+            </div>
+            <a href="#">¿Olvidaste tu contraseña?</a>
+            <button class="btn-login" name="btn-inicio">Iniciar sesión</button>
+          </form>
+        </div>
+        <div class="container-form">
+          <form action="InicioRegistro.php" method="POST" class="sign-up">
+            <h2>Registrarse</h2>
+            <span>Use su email para el registro</span>
+            <div class="container-input">
+              <i class="fa-regular fa-user"></i>
+              <input type="text" placeholder="Email" name="email" />
+            </div>
+            <span>Introduzca su edad</span>
+            <div class="container-input">
+              <i class="fa-regular fa-calendar"></i>
+              <input type="number" placeholder="edad" name="edad" />
+            </div>
+            <div class="container-input">
+              <i class="fa-solid fa-lock"></i>
+              <input type="password" placeholder="Password" name="password" />
+            </div>
+
+            <button class="btn-registro" name="btn-registro">
+              Registrarse
+            </button>
+          </form>
+        </div>
+        <div class="container-welcome">
+          <div class="welcome-sign-up welcome">
+            <h3>¡Bienvenido!</h3>
+            <p>
+              Registre sus datos personales poder acceder a todas nuestras
+              opciones de compra
+            </p>
+            <button class="btn" id="btn-sign-up">Registrarse</button>
+          </div>
+          <div class="welcome-sign-in welcome">
+            <h3>¡Hola!</h3>
+            <p>Ingrese sus datos personales para comprar</p>
+            <button class="btn" id="btn-sign-in">Iniciar Sesion</button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="./js/con-login.js"></script>
+  </body>
+</html>
